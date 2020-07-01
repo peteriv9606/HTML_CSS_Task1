@@ -1,2 +1,2 @@
-# HTML_CSS_Task1
-Simple Responsive Mockup from a psd project
+# HTML and CSS Task
+Simple and Responsive Mockup from a psd project made only with HTML and CSS.
