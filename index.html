@@ -3,58 +3,67 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Task1 - HTML/CSS</title>
 </head>
 <body>
     <div class="upper_header">
         <div class="grid-social">
-            <a href="http://www.facebook.com"> 
-                <img src="images/facebook_icon.png" onmouseover="this.src='images/facebook_icon_onhover.png'" onmouseout="this.src='images/facebook_icon.png'" alt="Facebook Icon" >
-             </a>
-             <a href="http://www.twitter.com"> 
-                <img src="images/twitter_icon.png" onmouseover="this.src='images/twitter_icon_onhover.png'" onmouseout="this.src='images/twitter_icon.png'" alt="Twitter Icon" >
-             </a>
-             <a href="http://www.pinterest.com"> 
-                <img src="images/pinterest_icon.png"onmouseover="this.src='images/pinterest_icon_onhover.png'" onmouseout="this.src='images/pinterest_icon.png'" alt="Pinterest Icon" >
-             </a>
-             <a href="http://www.linkedin.com"> 
-                <img src="images/linkedIn_icon.png" onmouseover="this.src='images/linkedIn_icon_onhover.png'" onmouseout="this.src='images/linkedIn_icon.png'" alt="LinkedIn Icon" >
-             </a>
-             <a href="http://www.tumblr.com"> 
-                <img src="images/tumblr_icon.png" onmouseover="this.src='images/tumblr_icon_onhover.png'" onmouseout="this.src='images/tumblr_icon.png'" alt="Tumblr Icon" >
-             </a>
+            <a class="fab fa-facebook-f" href="http://www.facebook.com"></a>
+            <a class="fab fa-twitter" href="http://www.twitter.com"></a>
+            <a class="fab fa-pinterest-p" href="http://www.pinterest.com"></a>
+            <a class="fab fa-linkedin-in" href="http://www.linkedin.com"></a>
+            <a class="fab fa-tumblr" href="http://www.tumblr.com"></a>
         </div> 
         <div class="grid-contact">
-            <a href="mailto:info@company.com"> 
-                <img src="images/Mail.png" onmouseover="this.src='images/Mail_onhover.png'" onmouseout="this.src='images/Mail.png'" alt="Mail" style=" vertical-align: middle;" >
-             </a>
-            <img src="images/Line.png" alt="Line" style="vertical-align: middle;">
-            <a href="tel:080012345678900"> 
-                <img src="images/Call.png" onmouseover="this.src='images/Call_onhover.png'" onmouseout="this.src='images/Call.png'" alt="Call" style=" vertical-align: middle" >
-             </a>
+            <a class="far fa-envelope" href="mailto:info@company.com">
+                <p class="contacttxt">
+                info@company.com
+                </p>
+            </a>
+            <div class="vertical-line"></div>
+            <a class="fas fa-phone-alt" href="tel:080012345678900">
+                <p class="contacttxt">
+                080012345678900
+                </p>
+            </a>
         </div>  
     </div>
    <div class="wrapper">
-    <div class="menu_wrapper">
-        <div class="tab" >
-            <a class="imgnodropdown" href="index.html"><img src="images/Logo.png" style="padding-top: 9px;" alt="Logo"></a>
-            <a class="dropdown">Browse Categories</a>
-            <a class="dropdown">How it works</a>
-            <a class="dropdown">Browse Contest</a>
-            <a class="dropdown">Pricing Plan</a>
-            <a class="nodropdown" href="#Login"><img src="images/login_icon.png" onmouseover="this.src='images/login_icon_onhover.png'" onmouseout="this.src='images/login_icon.png'" style="padding-right: 5px; vertical-align: -5%;">Login</a>
-            <a class="nodropdown" href="#Register"><img src="images/register_icon.png" onmouseover="this.src='images/register_icon_onhover.png'" onmouseout="this.src='images/register_icon.png'" style="padding-right: 5px; vertical-align: -10%;">Register</a>
-       </div>
+    <div class="menu">
+        <a href="index.html">
+            <img src="images/Logo.png" style="padding-top: 9px;" alt="Logo">
+        </a>    
+        <a class="dropdown">
+            <p class="menuitemtxt">Browse Categories</p>
+        </a>
+        <a class="dropdown">
+            <p class="menuitemtxt">How it works</p>
+        </a>
+        <a class="dropdown">
+            <p class="menuitemtxt">Browse Contest</p>
+        </a>
+        <a class="dropdown">
+            <p class="menuitemtxt">Pricing Plan</p>
+        </a>
+        <a class="fas fa-key" href="#Login">
+            <p class="menuitemtxt">Login</p>
+        </a>
+        <a class="fas fa-user" href="#Register">  
+            <p class="menuitemtxt">Register</p>
+        </a>
     </div>
-        <div class="banner">
-           <img src="images/Bird.png" class="centered_image" style="height: 70px; width: 100px;">
-           <img src="images/Rectangle.png" class="centered_image" style="margin-top: 10px; margin-bottom: 10px;">
-        </div>
-        <h1>Professional Graphic Designs</h1>
-        <div class="button_container">
-            <a class="button" href="#GetStarted">Get Started Now</a>
-        </div>
-        <p><img src="images/Tick.png" style="padding-right: 10px; vertical-align: middle;"><p1 style="color: #f0423c;">100%</p1> Money Back Guarantee</p>
+    
+
+    <div class="banner">
+        <img src="images/Bird.png" class="centered_image" style="height: 70px; width: 100px;">
+        <img src="images/Rectangle.png" class="centered_image" style="margin-top: 10px; margin-bottom: 10px;">
+    </div>
+    <h1>Professional Graphic Designs</h1>
+    <div class="button_container">
+        <a class="button" href="#GetStarted">Get Started Now</a>
+    </div>
+    <p><img src="images/Tick.png" style="padding-right: 10px; vertical-align: middle;"><p1 style="color: #f0423c;">100%</p1> Money Back Guarantee</p>
     </div>
     
     <div class="content">
@@ -63,7 +72,10 @@
         <p>How does one design and develop for the responsive web? A lot of methodologies</p>
        
         <div class="wrapper_content">
-            <div class="content-grid">                   
+            <div class="content-grid">    
+               
+                    
+                
             <a href="#LogoDesign">
                     <div class="content-grid-item-nobackground">
                     <img src="images/logo design.png" onmouseover="this.src='images/logo design_onhover.png'" onmouseout="this.src='images/logo design.png'" 
