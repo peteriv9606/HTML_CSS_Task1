@@ -32,7 +32,7 @@
         width: 30px;
         margin: 10px auto;
     }
-    
+
     div.upper_header {
         background-color: #424242;
         display:flex;
@@ -294,13 +294,45 @@
     }
 
     .footer {
+        font-size: 14px;
+        padding: 20px 0px;
         text-align: center;
-        font-family: "Exo-Bold";
-        font-size: 12px;
+        height: fit-content;
+        color: whitesmoke;
+        background-color: #424242;
+        font-family: Lato-Bold;
     }
 
     div.footer > p {
-        margin-bottom:0px;
+        padding: 10px 0px;
+    }
+
+    div.footer > div.footer-contact{
+        display: flex;
+    }
+
+    div.footer-contact > a{
+        display: flex;
+        width: 50%;
+        margin: 10px 15%;
+        padding: 5px 0px;
+        justify-content: center;
+        border: 2px solid;
+        border-radius: 20px;
+    }
+
+    div.footer-contact > a:hover{
+       color: #f0423c;
+       transition: 0.2s;
+    }
+
+    div.footer > p.contacttxt{
+        display: flex;
+        margin: 0px;
+        padding-left: 5px;
+        align-items: center;
+        font-family: Lato-Bold;
+        font-weight: initial;
     }
 
 @media screen and (max-width: 650px) {
@@ -327,16 +359,14 @@
         display: block;
         text-align: center;
     }
+}
 
-    .content-grid {
-        display: grid;
-        flex-direction: row;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        grid-template-rows: repeat(2);
-        width:300px;
+@media screen and (max-width: 950px) {
+    div.footer > div.footer-contact{
+        display: block;
+        text-align: -webkit-center;
     }
 }
-    
 
 @media screen and (max-width: 1120px) {
     div.wrapper > div.menu{
